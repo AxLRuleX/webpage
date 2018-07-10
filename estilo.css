@@ -1,0 +1,299 @@
+*
+{
+margin: 0px;
+padding: 0px;
+font-family: 'Dosis', sans-serif;
+}
+
+body
+{
+/*background: url(../Imagenes/fondo.jpg);*/
+background: rgb(126, 91, 229);
+}
+
+#cab
+{
+width: auto;
+height: 60px;
+background: rgb(15, 3, 53); 
+
+}
+
+#box_titulo
+{
+float: left;
+height: 50px;
+}
+
+#social_media
+{
+	float: right;
+	margin-top: 10px;
+}
+
+.logo
+{
+	float: right;
+	margin-right: 4px;
+	width: 40px;
+	height: 40px;
+}
+
+
+#titulo
+{
+color: rgb(255,255,255);
+margin-left: 10px;
+margin-top: 20px;
+font-size: 25px;
+}
+
+
+
+#cuerpo
+{
+width: auto;
+height: 500px;
+margin-left: 50px;
+margin-right: 50px;
+margin-top: 10px;
+background: white;
+
+}
+
+#columna1
+{
+	height: 500px;
+	
+	width: 160px;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+
+}
+
+#columna2
+{
+	height: 500px;
+	
+	width: 210px;
+	float: left;
+}
+
+#columna3
+{
+	height: 500px;
+	
+	width: 850px;
+	float: left;
+}
+
+.flip-container
+{
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	perspective: 1000;
+
+	-ms-transform: perspective(1000px);
+	-moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+
+	border: 1px solid #ccc;
+}
+
+/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+#cuadro1, .front1, .back1 {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-left: 4px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+
+#cuadro3, .front3, .back3 {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-left: 4px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#cuadro5, .front3, .back3 {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-left: 4px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+
+#cuadro2, .front2, .back2
+{
+	min-width: 200px;
+	min-height: 300px;
+	float: left;
+	margin-left: 4px;
+	margin-top: 5px;
+}
+
+#cuadro6, .front6, .back6 {
+	min-width: 200px;
+	min-height: 180px;
+	float: left;
+	margin-left: 4px;
+	margin-top: 5px;
+}
+
+#cuadro4, .front4, .back4 {
+	width: auto;
+	min-width: 840px;
+
+	min-height: 480px;
+	float: left;
+	margin-left: 4px;
+	margin-top: 5px;
+}
+
+.front1
+{
+background: url(../Imagenes/team.jpg) fixed center;
+background-size: 250px auto;	
+color: white;
+
+}
+
+#text-c1
+{
+	float: right;
+font-size: 20px;
+margin-top: 100px;
+margin-right: 5px;
+}
+
+.front4
+{
+background: url(../Imagenes/princ.jpg) fixed center;
+background-size: 840px 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front1, .back1, .front2, .back2, .front3, .back3, .front4, .back4, .front5, .back5, .front6, .back6 {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front1, .front2, .front3, .front4, .front5, .front6 {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back1, .back2, .back3, .back4, .back5, .back6 {
+	transform: rotateY(180deg);
+}
+
+#cud1
+{
+ width: 150px;
+ height:150px;
+ background: rgb(235, 244, 66);
+ 
+ 
+}
+
+#cud2
+{
+ width: 200px;
+ height:300px;
+ background: rgb(30, 132, 112);
+ 
+}
+
+#cud3
+{
+ width: 150px;
+ height:150px;
+ background: rgb(66, 143, 244);
+}
+
+#cud5
+{
+ width: 150px;
+ height:150px;
+ background: rgb(191, 26, 26);
+ 
+}
+
+#cud6
+{
+ width: 200px;
+ height:180px;
+ background: rgb(42, 132, 30);
+ 
+}
+
+#cud4
+{
+ min-width: 840px
+ width: auto;
+ height:480px;
+ background: rgb(33, 72, 112);
+ 
+}
+
+/*div
+{
+	border: 1px solid;
+}
+*/
+
+#descripcion
+{
+margin-left: 10px;
+}
+
+#pie
+{
+width: auto;
+height: 50px;
+margin-top: 15px;
+position: relative;
+background: rgb(15, 3, 53);  
+}
+
+#box_pie
+{
+float: right;
+height: 50px;
+}
+
+#texto-pie
+{
+color: rgb(255,255,255);
+margin-right: 10px;
+margin-top: 20px;
+font-size: 10px;
+}
